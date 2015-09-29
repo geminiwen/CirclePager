@@ -11,6 +11,15 @@ so..
 
 ## How to Use?
 
+in xml
+
+```xml
+<cn.geminiwen.circlepager.view.CirclePager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/circle_pager" />
+```
+
 As you wish, extends BaseAdapter like this.
 
 ```java

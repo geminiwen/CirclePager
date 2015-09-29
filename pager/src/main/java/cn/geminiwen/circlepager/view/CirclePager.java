@@ -193,6 +193,12 @@ public class CirclePager extends HorizontalScrollView {
     }
 
     @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        removeCallbacks(mAutoPlayRunnable);
+    }
+
+    @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         this.scrollToPage(0, false);
         super.onLayout(changed, l, t, r, b);
