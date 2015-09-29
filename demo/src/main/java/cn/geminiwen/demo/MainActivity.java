@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onContentChanged();
         mCirclePager = (CirclePager)findViewById(R.id.circle_pager);
         mCirclePager.setAdapter(new Adapter());
+
+        mCirclePager.setAutoPlay(true);
     }
 
     private class Adapter extends BaseAdapter {
